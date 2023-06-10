@@ -1,45 +1,58 @@
-# Project Title: Streamlit Todo Web App
-## Description:
-The Streamlit Todo Web App is a Python-based project developed by Subhojit Guin to provide users with a simple and intuitive web application for managing their tasks and to-do lists. Built using Streamlit, a popular web app framework for Python, this project allows users to add, track, and complete tasks seamlessly through a user-friendly interface.
+# Todo App
 
-To access the web app, click [here](https://subhojitguin-my-todo-web-app-web-is41tt.streamlit.app/).
+This project is a simple to-do list application built using Streamlit, a Python library for creating web applications. The app allows users to add, manage, and complete tasks in a user-friendly interface.
 
-## Key Features:
-**Task Management**: Users can easily add new tasks to their to-do list, providing a title, description, and due date for each task.
+## Features
 
-**Task Completion**: Users can mark tasks as completed once they are finished, allowing for effective tracking of completed and pending tasks.
+- Add new tasks to the to-do list.
+- Mark tasks as completed.
+- Automatically update the list when tasks are completed.
+- Store the to-do list in a text file (`todos.txt`).
+- Display the list of tasks using checkboxes.
 
-**Data Persistence**: The application stores tasks and their associated data securely, ensuring that user information is saved and accessible even after closing the app.
+## Web App Implementation
 
-**Sleek User Interface**: The web app utilizes Streamlit's built-in UI components to create an attractive and user-friendly interface, making task management a breeze.
+The web app is implemented using Streamlit, a popular Python library for building interactive web applications. The `web.py` script contains the main code for the app. It loads the existing to-do list from the `todos.txt` file and displays it on the web page. Users can add new tasks by entering them in the text input box and pressing Enter. The app also includes checkboxes next to each task to mark them as completed. When a task is marked as completed, it is removed from the list and the `todos.txt` file is updated accordingly.
 
-**Responsive Design**: The app is designed to adapt to different screen sizes, ensuring a seamless user experience across various devices, including desktops, tablets, and smartphones.
+## File Structure
 
-## Technologies Used:
-- Python programming language
-- Streamlit web app framework
+- `web.py`: This script contains the main application code and handles the Streamlit web app.
+- `functions.py`: This script contains helper functions for reading and writing to the `todos.txt` file.
 
-## Installation and Usage:
-To run the Streamlit Todo Web App locally, follow these steps:
+## Requirements
 
-- Clone the repository from GitHub.
-- Install the required dependencies by running the appropriate command.
-- Launch the application using the provided command. Type,
-  ```streamlit run web.py``` in the Python terminal.
-- Access the web app through your web browser by visiting the specified URL.
+The project requires the following dependencies:
 
-## Example Usage:
-- Open the web app in your browser.
-- Enter a new task in the input fields.
-- Click the "Enter" button on your keyboard to add the task to your to-do list.
-- As you complete tasks, click the corresponding checkbox.
+- Streamlit==1.23.1
 
-## Contributions:
-Contributions to the project are welcome. If you would like to contribute, please follow the guidelines outlined in the project's GitHub repository.
+You can install the required dependencies by running `pip install -r requirements.txt`.
 
-## Acknowledgements:
-We would like to express our gratitude to the Streamlit development team for creating a powerful and user-friendly web app framework that made this project possible.
+## Usage
 
+To use the to-do app:
 
+1. Clone the repository or download the source code files.
+2. Ensure that the `todos.txt` file exists in the same directory as the `web.py` and `functions.py` files.
+3. Run the `web.py` script using Python: `streamlit run web.py`.
+4. The web app will open in your default web browser.
+5. Enter new tasks in the text input box and press Enter to add them to the list.
+6. Use the checkboxes to mark tasks as completed. Completed tasks will be automatically removed from the list.
+7. The `todos.txt` file will be updated with the latest to-do list.
 
+## Customization
 
+You can customize the app by modifying the code in the `web.py` and `functions.py` files. For example, you can change the layout, styling, or file path for storing the to-do list.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, bug fixes, or new features to add, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Acknowledgements
+
+- [Streamlit](https://streamlit.io/) - A Python library for building web applications.
+
+Feel free to customize the above template to include specific details about your to-do app, such as installation instructions, additional features, or any other relevant information.
